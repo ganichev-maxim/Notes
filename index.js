@@ -16,6 +16,7 @@ nunjucks.configure("views", {
 });
 
 app.set("view engine", "njk");
+app.enable("trust proxy");
 
 const sessionParser = session({
   saveUninitialized: false,
